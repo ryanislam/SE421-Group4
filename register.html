@@ -66,9 +66,10 @@ a {
   text-align: center;
 }
 </style>
+<script defer src="script.js"></script>
 </head>
 <body>
-
+<div id="error"></div>
 <form action="/action_page.php">
   <div class="container">
     <h1>Register</h1>
@@ -92,7 +93,7 @@ a {
     
     <b>I am a:<b>
     <br>
-    <form>
+    <form id="genderform">
     <input type="radio" name="gender" value="male" checked> Male
     <input type="radio" name="gender" value="female"> Female
     <input type="radio" name="gender" value="other"> Other  
@@ -101,7 +102,7 @@ a {
     <br>
     
     <b>I would like to be addressed as:<b>
-    <select>
+    <select id="titleselect">
     <option value="Mr">Mr</option>
     <option value="Mrs">Mrs</option>
     <option value="Sir">Sir</option>
@@ -123,6 +124,7 @@ a {
   </div>
   
 </form>
-<A href="ahmad2.html">Back Home </A> 
+<A href="hotels.html">Back Home </A>
 </body>
+
 </html>
