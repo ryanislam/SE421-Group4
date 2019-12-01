@@ -46,12 +46,12 @@ def data():
     return render_template('data.html', title='Data')
 
 
-# print("-- DEBUG MODE ----")
-# app.run(debug = True, port= '5555')
+print("-- DEBUG MODE ----")
+app.run(debug = True, port= '5555')
 
-import os
-from waitress import serve
+# import os
+# from waitress import serve
 
-print("--PRODUCTION MODE ---")
-p = os.environ.get('PORT')
-serve(app, host='0.0.0.0', port=p)
+# print("--PRODUCTION MODE ---")
+# p = os.environ.get('PORT')
+# serve(app, host='0.0.0.0', port=p)
