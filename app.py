@@ -11,7 +11,14 @@ app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'ryanislam@hotmail.com'
 app.config['MAIL_PASSWORD'] = 'passwordplaceholder'
 
-mail = Mail(app)
+# Placeholder for mail retreival from contact us page
+#   mail = Mail(app)
+#   @app.route('/process_email', methods=['POST'])
+#   def process_email():
+#   msg = Message('Test', sender='testaccount@gmail.com', recipients=['your@email.com'])
+#   msg.body = 'This is a test email' #Customize based on user input
+#   mail.send(msg)
+#   return 'done'
 
 #Error 404 Page
 @app.errorhandler(404)
