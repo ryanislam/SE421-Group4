@@ -13,24 +13,24 @@ app.config['MAIL_USERNAME'] = 'ryanislam@hotmail.com'
 app.config['MAIL_PASSWORD'] = 'passwordplaceholder'
 app.config['MAIL_DEFAULT_SENDER'] = "ryanislam@hotmail.com"
 
-# mail = Mail(app)
+#mail = Mail(app)
 
-# Mail retreival from contact us page
-# @app.route('/process_email', methods=['GET','POST'])
-# def process_email():
-# name=request.form['name']
-# password=request.form['password']
-# email=request.form['email']
-# msg = Message("Email confirmation", recipients=[email])
-# msg.html=render_template('index.html',name=name,password=password,email=email)
-# msg.body = 'Confirming Email'
-# mail.send(msg)
-# return render_template('index.html',title='Home',msg="Thank you {name}, you have successfully registered. Please check your email inbox at {email}.")
+#   send email to user and company
+#@app.route('/', methods=['POST'])
+#def send_email():
+#user_email = request.form['user_email']
+#user_message = request.form['user_message']
 
-# Parameterized Rqeuest
-# @app.route('/', methods=['GET', 'POST'])
-# def parse_request():
-#     data = request.data
+#   send user message to company email
+#usr_msg = Message('Customer - Contact Us', sender= f'{user_email}' , recipients= ['ryanislam@hotmail.com'])
+#usr_msg.body = f'''{user_message}'''
+#mail.send(usr_msg)
+
+#   reply confirmation to user
+#msg = Message('We recieved your concerns', sender = 'ryanislam@hotmail.com', recipients = [user_email])
+#msg.body = f''' Thank you { user_email }, we have recieved your email! You will receive a confirmation email from us within the next 2 days'''
+#mail.send(msg)
+#return index()
 
 # Error 404 Page
 @app.errorhandler(404)
