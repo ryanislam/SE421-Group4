@@ -7,7 +7,7 @@ app.secret_key = 'fbd1eefad885bf835e1d5ea884244221'
 
 # Mail config settings
 app.config['MAIL_SERVER'] = 'smtp.googlemail.com'
-app.config['MAIL_PORT'] = 465
+app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'ryanislam@hotmail.com'
 app.config['MAIL_PASSWORD'] = 'passwordplaceholder'
@@ -15,18 +15,18 @@ app.config['MAIL_DEFAULT_SENDER'] = "ryanislam@hotmail.com"
 
 #mail = Mail(app)
 
-#   send email to user and company
+#send email to user and company
 #@app.route('/', methods=['POST'])
 #def send_email():
 #user_email = request.form['user_email']
 #user_message = request.form['user_message']
 
-#   send user message to company email
+#send user message to company email
 #usr_msg = Message('Customer - Contact Us', sender= f'{user_email}' , recipients= ['ryanislam@hotmail.com'])
 #usr_msg.body = f'''{user_message}'''
 #mail.send(usr_msg)
 
-#   reply confirmation to user
+#reply confirmation to user
 #msg = Message('We recieved your concerns', sender = 'ryanislam@hotmail.com', recipients = [user_email])
 #msg.body = f''' Thank you { user_email }, we have recieved your email! You will receive a confirmation email from us within the next 2 days'''
 #mail.send(msg)
