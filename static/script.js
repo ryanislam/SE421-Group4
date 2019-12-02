@@ -74,7 +74,15 @@ function Validate()
         password_error.innerHTML = "The two passwords do not match";
         return false;
     }
+    if (password.value.length < 6)
+    {
+        password.style.border = "1px solid red";
+        document.getElementById('password_div').style.color= "red";
+        password_error.textContent = "Password is too short";
+        return false;
+    }
 }
+
 function firstnameVerify() 
 {
     if (firstname.value != "") 
