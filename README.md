@@ -1,14 +1,10 @@
-# SE421-Group4
-Internet Applications Project Group 4
+Hello, to launch this application please follow these steps:
+1. Make sure GithubDesktop is installed.
+2. Make sure vscode is installed.
+3. On the Github repository, click "Clone or Download" and select "Open in Desktop" and agree to launch on Github Dekstop.
+4. Open the program on vscode via GithubDesktop.
+5. Start a virtualenv through the vscode cmd terminal.
+6. You can run locally by entering python app.py on the cmd terminal within vscode.
+7. Go to the localhost link at the generated port.
 
-
-# Eng. Sami Notes:
-1. all images should be moved into `images` folder <!-- Done: Ryan and Ahmed -->
-2. image files should renamed into meangingful names (without spaces or !@#$%^&*() chars) <!-- Done: Ryan and Ahmed -->
-3. all CSS code should moved into `style.css` file <!-- Done for Registration, Index: Ryan -->
-4. include menu in all pages
-5. use Bootstrap in Form elements.
-6. add `.gitignore` file
-7. DON'T upload any *.zip file. <!-- Zip files removed and integrated into code appropriately: Ryan -->
-
-_sami 28/10/2019_
+Alternatively, you can head to https://hotels-app-se241.herokuapp.com to view the already deployed website.
