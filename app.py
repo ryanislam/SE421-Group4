@@ -13,7 +13,7 @@ app.config['MAIL_USERNAME'] = 'ryanislam@hotmail.com'
 app.config['MAIL_PASSWORD'] = 'passwordplaceholder'
 app.config['MAIL_DEFAULT_SENDER'] = "ryanislam@hotmail.com"
 
-mail = Mail(app)
+# mail = Mail(app)
 
 # Mail retreival from contact us page
 #@app.route('/process_email', methods=['GET','POST'])
