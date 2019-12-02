@@ -27,6 +27,11 @@ app.config['MAIL_DEFAULT_SENDER'] = "ryanislam@hotmail.com"
 #mail.send(msg)
 #return render_template('index.html',title='Home',msg="Thank you {name}, you have successfully registered. Please check your email inbox at {email}.")
 
+# Parameterized Rqeuest
+@app.route('/', methods=['GET', 'POST'])
+def parse_request():
+    data = request.data
+
 # Error 404 Page
 @app.errorhandler(404)
 def err_404(error):
