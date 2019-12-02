@@ -16,16 +16,16 @@ app.config['MAIL_DEFAULT_SENDER'] = "ryanislam@hotmail.com"
 # mail = Mail(app)
 
 # Mail retreival from contact us page
-#@app.route('/process_email', methods=['GET','POST'])
-#def process_email():
-#name=request.form['name']
-#password=request.form['password']
-#email=request.form['email']
-#msg = Message("Email confirmation", recipients=[email])
-#msg.html=render_template('index.html',name=name,password=password,email=email)
-#msg.body = 'Confirming Email'
-#mail.send(msg)
-#return render_template('index.html',title='Home',msg="Thank you {name}, you have successfully registered. Please check your email inbox at {email}.")
+# @app.route('/process_email', methods=['GET','POST'])
+# def process_email():
+# name=request.form['name']
+# password=request.form['password']
+# email=request.form['email']
+# msg = Message("Email confirmation", recipients=[email])
+# msg.html=render_template('index.html',name=name,password=password,email=email)
+# msg.body = 'Confirming Email'
+# mail.send(msg)
+# return render_template('index.html',title='Home',msg="Thank you {name}, you have successfully registered. Please check your email inbox at {email}.")
 
 # Parameterized Rqeuest
 @app.route('/', methods=['GET', 'POST'])
