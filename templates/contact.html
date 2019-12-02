@@ -1,3 +1,4 @@
+<!-- Page done my Ahmed, Flask/form by Ryan -->
 {% extends 'layout.html' %}
 
 {% block head %}
@@ -140,25 +141,22 @@ body{
 <div class="wrapper">
 	<h1>Contact Us </h1>
 	<p>Reach out us, We are waiting to interact with you.</p>
+	<form action="proccess_email" method="GET"></form>
 	<div class="contactus">
 		<div class="input_wrapper input_wrapper_top">
 			<div class="input_item">
-				<input type="text" placeholder="Your Name">
+				<input type="text" placeholder="Your Name" required>
 				<i class="fas fa-user"></i>
 			</div>
 			<div class="input_item">
-				<input type="text" placeholder="Your Email">
+				<input type="email" placeholder="Your Email" required>
 				<i class="fas fa-at"></i>
 			</div>
 		</div>
 		<div class="input_wrapper input_wrapper_bottom">
 			<div class="input_item">
-				<input type="text" placeholder="Your Subject">
+				<input type="text" placeholder="Your Subject" required>
 				<i class="fas fa-sticky-note"></i>
-			</div>
-			<div class="input_item">
-				<input type="text" placeholder="Your Phone">
-				<i class="fas fa-phone"></i>
 			</div>
 		</div>
 		<div class="message_wrapper">

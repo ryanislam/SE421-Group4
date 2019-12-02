@@ -1,4 +1,4 @@
-<!-- Page done by Ryan Islam -->
+<!-- Page done by Ryan -->
 
 {% extends 'layout.html' %}
 
@@ -10,34 +10,27 @@
 		<p>Please fill in this form to create an account.</p>
 		<hr>
         
-        <div id="firstname_div">
-			<label for="firstname"><b>First Name</b></label>
-            <input type="text" placeholder="Enter first name" name="firstname" required>
-            <div id="firstname_error"></div>
-        </div>
-
-    	<div id="lastname_div">
-			<label for="lastname"><b>Last Name</b></label>
-            <input type="text" placeholder="Enter last name" name="lastname" required>
-            <div id="lastname_error"></div>
+        <div id="username_div">
+			<label>Username</label> <br>
+			<input type="text" name="username" class="textInput">
+			<div id="name_error"></div>
         </div>
             
-        <div id="email_div">
-		    <label for="email"><b>Email</b></label>
-            <input type="email" placeholder="Enter Email" name="email" required>
-            <div id="email_error"></div>
+		<div id="email_div">
+			<label>Email</label> <br>
+			<input type="email" placeholder="Enter Email" name="email" class="textInput">
+			<div id="email_error"></div>
         </div>
 
-        <div id="password_div">
-			<label for="password"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" required>
-        </div>
-
-		<div id="password_confirm_div">
-            <label for="password_confirm"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Confirm Password" name="password_confirm" required>
-            <div id="password_error"></div>
-        </div>
+		<div id="password_div">
+			<label>Password</label> <br>
+			<input type="password" name="password" class="textInput">
+		</div>
+		<div id="pass_confirm_div">
+			<label>Password confirm</label> <br>
+			<input type="password" name="password_confirm" class="textInput">
+			<div id="password_error"></div>
+		</div>
 
 		<b>I am a:<b>
 		<br>
