@@ -76,13 +76,13 @@ def hotelviewingsecond(name):
     return render_template('hotel_viewing.html',name=name)
 
 
-#print("-- DEBUG MODE ----")
-#app.run(debug = True, port= '5555')
+print("-- DEBUG MODE ----")
+app.run(debug = True, port= '5555')
 
-Waitress 
-import os
-from waitress import serve
+#Waitress 
+#import os
+#from waitress import serve
 
-print("--PRODUCTION MODE ---")
-p = os.environ.get('PORT')
-serve(app, host='0.0.0.0', port=p)
+#print("--PRODUCTION MODE ---")
+#p = os.environ.get('PORT')
+#serve(app, host='0.0.0.0', port=p)
