@@ -3,22 +3,39 @@
 
 {% block body %}
 
+ 
+  <!--bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+    <script src="/static/jquery-3.4.1.min.js"></script>
+
 <div class="row">
 <div class="side">
                     
     <figure>
         <img src="static/images/hotelslogo.png" alt="The Pulpit Rock" width="304" height="228">
-        <figcaption>Hotels.com</figcaption>
+        <figcaption>Hotels.com1</figcaption>
     </figure> <!-- Ryan -->
-                  
+<div class="container">
+<div class="row">
+    <div class="col-sm-6">
+              <section>    
     <p>At Hotels, we’re committed to delivering True Hospitality for everyone. We believe in making you feel welcome and valued, wherever you are in the world. That’s because we truly care about people and the communities we serve, and because we pride ourselves on providing the highest quality of service.
         
         Each of our hotel brands caters to guests in their own distinct way. And our reach spans the globe. So, whether you’re traveling for business, fun with friends and family, or pure luxury, we have a hotel for you.</p>
            
             
         <h5>Photo of Hotels </h5>
-            
+    </div>
+</div>
     <figure>
+        </section>
+    </div>
         <img src="static/images/hotelsample01.jpg" alt="The Pulpit Rock" width="305" height="228">
                 <figcaption><a href></a>Book L Hotel (Khon Kaen) - 2019 PRICES FROM A$32</figcaption>
     </figure> <!-- Ryan -->
@@ -64,7 +81,48 @@
         <figcaption>Hotels Compare Cheap Hotel Deals & Discounts </figcaption>
     </figure> <!-- Ryan -->
 </div>
-</div>
 
+</div>
+<br>
+
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <h2>holday inn</h2>
+
+
+        <span class="badge badge-primary badge-pill">98</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <h2>helton'</h2>
+
+
+        <span class="badge badge-primary badge-pill">120</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <h2>aldar al hmra</h2>
+
+
+        <span class="badge badge-primary badge-pill">2</span>
+    </li>
+</ul>
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <h2>aldar albada</h2>
+
+
+        <span class="badge badge-primary badge-pill">5</span>
+    </li>
+</ul>
+<div class="progress">
+    <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="15" aria-valuemin="0"
+        aria-valuemax="100">holiday inn</div>
+    <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+        aria-valuemax="100">helton'</div>
+    <div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="20" aria-valuemin="0"
+        aria-valuemax="100">aldar alhmra</div>
+    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="20" aria-valuemin="0"
+        aria-valuemax="100">aldar albada</div>
+
+</div>
 
 {% endblock %}
